@@ -1,0 +1,23 @@
+{
+  "name": "social-node-mongo",
+  "version": "1.0.0",
+  "description": "ejemplo de uso de node y mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cestari-ariel/social-node-mongo.git"
+  },
+  "author": "puma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cestari-ariel/social-node-mongo/issues"
+  },
+  "homepage": "https://github.com/cestari-ariel/social-node-mongo#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
