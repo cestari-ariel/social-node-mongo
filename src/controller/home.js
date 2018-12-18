@@ -1,7 +1,7 @@
 const crtl = {};
 
 crtl.index = (req,res)=>{
-    res.send('Home Index page');
+    res.render('index');
 };
 
 
