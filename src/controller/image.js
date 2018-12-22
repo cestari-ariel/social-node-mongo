@@ -6,8 +6,10 @@ const { Image } = require('../model/index');
 
 const ctrl = {};
 
-ctrl.index = (req, res)=>{
-    
+ctrl.index = async (req, res)=>{
+    const image = await Image.findOne({filename: {$regex: req.params.image_id}});
+    console.log(image);
+    res.render('image', {image: image});
 };
 
 ctrl.create = (req, res)=>{
@@ -42,8 +44,7 @@ ctrl.create = (req, res)=>{
                 res.status(500).json({error: 'Only images allowed'});
             }
            
-            res.send("Guarado");
-            //res.redirect('/images');
+            res.redirect('/images/'+ imgURL);
                 }
             };
 
